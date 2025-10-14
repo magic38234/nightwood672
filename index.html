@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+
+<html lang="lt">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Night Wood Pagrindinis</title>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://i.postimg.cc/xTbFtq6w/IMG-0546.png" rel="icon" type="image/png"/>
+<link rel="stylesheet" href="css/style_index.css" />
+
+</head>
+<body>
+<header>
+<div class="logo">
+<a class="logo" href="/index.html">
+<img alt="logotipas" src="https://i.postimg.cc/xTbFtq6w/IMG-0546.png"/></a>
+</div>
+<div id="scrollLine"></div>
+</div>
+</div>
+<div class="cart-icon" id="cartIcon">
+<img alt="cart" class="cart-img" src="https://i.postimg.cc/9fs6JGmx/icons8-bag-50.png">
+<span class="cart-count-badge" id="cartCount">0</span>
+</img></div>
+<div class="burger" id="burgerBtn">
+<span></span><span></span><span></span>
+</div>
+</header>
+<div id="menuOverlay">
+<div id="closeMenuBtn">✕</div>
+<a data-translate="Pagrindinis" href="/index.html"> Pagrindinis
+  </a>
+<a data-translate="Katalogas" href="/catalog.html"> Katalogas
+  </a>
+<a data-translate="Krepšelis" href="/cart.html"> Krepšelis
+  </a>
+<a data-translate="Apie mus" href="#about"> Apie mus
+  </a>
+<div class="contact"> Tel.: +370 640 81 312
+  </div>
+<div class="social-icons">
+<a href="https://www.facebook.com/NightWood.lt"><img alt="Facebook" src="https://i.postimg.cc/G3Z9ZSj4/icons8-facebook-50.png"/></a>
+<a href="https://www.instagram.com/nightwood.lt/"><img alt="Instagram" src="https://i.postimg.cc/Cdy7WHcW/icons8-instagram-50.png"/></a>
+</div>
+</div>
+<!--Kорзинa-->
+<div class="cart-overlay" id="cartOverlay"></div>
+<div class="cart-panel" id="cartPanel">
+<div class="cart-header">
+<h2 data-translate="Jūsų krepšelis">Jūsų krepšelis</h2>
+<button class="close-cart" id="closeCartBtn">✕</button>
+</div>
+<div class="cart-body">
+<ul id="cartItems"></ul>
+</div>
+<div class="cart-footer">
+<div class="total-line">
+<span data-translate="Iš viso:">Iš viso:</span>
+<span>€<span id="cartTotal">0</span></span>
+</div>
+<button class="checkout-btn" onclick="window.location.href='/cart.html'"><span data-translate="Tęsti apmokėjimą">Tęsti apmokėjimą</span></button>
+</div></div>
+<div class="hero-banner">
+<div class="hero-content">
+<h1 data-translate="Prabanga iš medžio ir akmens">Prabanga iš medžio ir akmens</h1>
+<p data-translate="Išskirtiniai padėklai, mangalai ir lentos – unikalūs dirbiniai iš natūralių medžiagų tavo namams ir dovanoms.">Išskirtiniai padėklai, mangalai ir lentos – unikalūs dirbiniai iš natūralių medžiagų tavo namams ir dovanoms.</p>
+<button class="hero-btn" onclick="window.location.href='/catalog.html'"><span data-translate="Žiūrėti kolekciją">Žiūrėti kolekciją
+  
+</span></button>
+</div>
+</div>
+
+<section class="section">
+<h2 data-translate="Populiariausi produktai">Populiariausi produktai</h2>
+<div class="products">
+<div class="product-card">
+
+<div class="slider-wrapper">
+<div class="slider-arrow left" onclick="slideImage(this, -1)"></div>
+<div class="slider-arrow right" onclick="slideImage(this, 1)"></div>
+<img alt="Padėklas" class="active" src="https://i.postimg.cc/HLRt2CqJ/poon.jpg">
+<img alt="Padėklas" src="https://i.postimg.cc/VkNBP61r/476231208-1034025892077411-8188252417738116989-n.jpg">
+</img></img></div>
+<div class="info">
+<h3 data-translate="Graviruotas padėklas">Graviruotas padėklas</h3>
+<p data-translate="Stilingas ir natūralus akcentas jūsų stalo serviravimui.">Stilingas ir natūralus akcentas jūsų stalo serviravimui.</p>
+</div>
+<div class="product-footer">
+<div class="product-price" data-eur="46">€ 46</div>
+<button class="buy-button go-to-cart">
+<svg class="btn-icon" fill="none" height="13" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="13">
+<circle cx="9" cy="21" r="1"></circle>
+<circle cx="20" cy="21" r="1"></circle>
+<path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path>
+</svg> <span data-translate="PIRKTI"> PIRKTI</span>
+</button>
+</div>
+</div>
+<div class="product-card">
+<div class="slider-wrapper">
+<div class="slider-arrow left" onclick="slideImage(this, -1)"></div>
+<div class="slider-arrow right" onclick="slideImage(this, 1)"></div>
+<img alt="Padėklas" class="active" src="https://i.postimg.cc/GhV6HZ2p/mangalas.jpg"/>
+<img alt="Padėklas" src="https://i.postimg.cc/xjswSkVM/photo-2025-04-21-23-03-50.jpg"/>
+</div><div class="info">
+<h3 data-translate="Metaliniai mangalai">Metaliniai mangalai</h3>
+<p data-translate="Tvirtas dizainas ir puikus funkcionalumas lauko kepimui.">Tvirtas dizainas ir puikus funkcionalumas lauko kepimui.</p>
+</div>
+<div class="product-footer"><div class="product-price" data-eur="550">€ 550</div>
+<button class="buy-button go-to-cart">
+<svg class="btn-icon" fill="none" height="13" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="13">
+<circle cx="9" cy="21" r="1"></circle>
+<circle cx="20" cy="21" r="1"></circle>
+<path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path>
+</svg> <span data-translate="PIRKTI"> PIRKTI</span>
+</button>
+</div>
+</div>
+<div class="product-card">
+<div class="slider-wrapper">
+<div class="slider-arrow left" onclick="slideImage(this, -1)"></div>
+<div class="slider-arrow right" onclick="slideImage(this, 1)"></div>
+<img alt="Padėklas" class="active" src="https://i.postimg.cc/fypZWypz/IMG-0832.jpg"/>
+<img alt="Padėklas" src="https://i.postimg.cc/4NHsLvHm/1453368273-121412851-1263882373960351-7394105723998329079-n.jpg"/>
+</div>
+<div class="info">
+<h3 data-translate="Paprastas padėklas">Paprastas padėklas</h3>
+<p data-translate="Stilingas ir natūralus akcentas jūsų stalo serviravimui">Stilingas ir natūralus akcentas jūsų stalo serviravimui.</p>
+</div>
+<div class="product-footer"><div class="product-price" data-eur="36">€ 36</div>
+<button class="buy-button go-to-cart">
+<svg class="btn-icon" fill="none" height="13" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="13">
+<circle cx="9" cy="21" r="1"></circle>
+<circle cx="20" cy="21" r="1"></circle>
+<path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path>
+</svg> <span data-translate="PIRKTI"> PIRKTI</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Кнопка "Вверх" -->
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet"/>
+<div class="up-button" id="upButton">
+<i class="fas fa-angle-double-up"></i>
+</div>
+</section>
+
+<!-- Добавь этот код после секции с популярными товарами и перед футером -->
+<section class="benefits-section">
+<div class="benefits-container">
+<h2 data-translate="Mūsų privalumai">Mūsų privalumai</h2>
+<div class="benefits-grid">
+<div class="benefit-card">
+<div class="benefit-icon">
+<i class="fas fa-hands"></i>
+</div>
+<h3 data-translate="Rankų darbo">Rankų darbo</h3>
+<p data-translate="Kiekvienas gaminys pagamintas rankiniu būdu su meile ir dėmesiu detalėms">Kiekvienas gaminys pagamintas rankiniu būdu su meile ir dėmesiu detalėms</p>
+</div>
+<div class="benefit-card">
+<div class="benefit-icon">
+<i class="fas fa-medal"></i>
+</div>
+<h3 data-translate="Aukštos kokybės">Aukštos kokybės</h3>
+<p data-translate="Naudojame tik geriausios kokybės medžiagas ir komponentus">Naudojame tik geriausios kokybės medžiagas ir komponentus</p>
+</div>
+<div class="benefit-card">
+<div class="benefit-icon">
+<i class="fas fa-leaf"></i>
+</div>
+<h3 data-translate="Ekologiškas">Ekologiškas</h3>
+<p data-translate="Natūralios medžiagos ir ekologiški apdirbimo būdai">Natūralios medžiagos ir ekologiški apdirbimo būdai</p>
+</div>
+<div class="benefit-card">
+<div class="benefit-icon">
+<i class="fas fa-headset"></i>
+</div>
+<h3 data-translate="Pagalba 24/7">Pagalba 24/7</h3>
+<p data-translate="Visada pasiruošę atsakyti į jūsų klausimus ir padėti">Visada pasiruošę atsakyti į jūsų klausimus ir padėti</p>
+</div>
+</div>
+</div>
+</section>
+<footer>
+<div class="footer-content">
+<div class="footer-section">
+<h3>Night Wood</h3>
+<p data-translate="Prabangūs mediniai dirbiniai namams ir dovanoms">Prabangūs mediniai dirbiniai namams ir dovanoms</p>
+<div class="footer-social">
+<a aria-label="Facebook" href="https://www.facebook.com/NightWood.lt">
+<img alt="Facebook" src="https://i.postimg.cc/G3Z9ZSj4/icons8-facebook-50.png"/>
+</a>
+<a aria-label="Instagram" href="https://www.instagram.com/nightwood.lt/">
+<img alt="Instagram" src="https://i.postimg.cc/Cdy7WHcW/icons8-instagram-50.png"/>
+</a>
+</div>
+</div>
+<div class="footer-section">
+<h3 data-translate="Nuorodos">Nuorodos</h3>
+<ul>
+<li><a data-translate="Pagrindinis" href="/index.html">Pagrindinis</a></li>
+<li><a data-translate="Katalogas" href="/catalog.html">Katalogas</a></li>
+<li><a data-translate="Krepšelis" href="/cart.html">Krepšelis</a></li>
+<li><a data-translate="Apie mus" href="#about">Apie mus</a></li>
+</ul>
+</div>
+<div class="footer-section">
+<h3 data-translate="Kontaktai">Kontaktai</h3>
+<ul>
+<li><i class="fas fa-phone-alt gradient-icon"></i> +370 640 81 312</li>
+<li><i class="fas fa-envelope gradient-icon"></i> info@nightwood.lt</li>
+<li><i class="fas fa-map-marker-alt gradient-icon"></i> Druskininkai, Lietuva</li>
+</ul>
+</div>
+<div class="footer-section">
+<h3 data-translate="Naujienlaiškis">Naujienlaiškis</h3>
+<p data-translate="Prenumeruokite naujienas ir gaukite specialius pasiūlymus">Prenumeruokite naujienas ir gaukite specialius pasiūlymus</p>
+<form class="newsletter-form">
+<input placeholder="info@nightwood.lt" required="" type="email"/>
+<button type="submit"><span data-translate="Prenumeruoti">Prenumeruoti</span></button>
+</form>
+</div>
+</div>
+<div class="footer-bottom">
+<p>© 2025 Night Wood. Visos teisės saugomos.</p>
+<div class="payment-methods">
+<img alt="Visa" src="https://i.postimg.cc/CKPyX9vz/Mastercard-Logo-wine.png"/>
+<img alt="Paysera" src="https://i.postimg.cc/FRq31sK3/channels4-profile-removebg-preview.png"/>
+<img alt="PayPal" src="https://i.postimg.cc/xjt8njQk/paypal.png"/>
+</div>
+</div>
+</footer>
+<script src="js/main_index.js" defer></script>
+
+</body>
+</html>
